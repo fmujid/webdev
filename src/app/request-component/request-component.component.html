@@ -1,0 +1,40 @@
+
+<!-- [(ngModel)]="numOfTravelers" -->
+<form action="/action_page.php">
+
+  <div class="form-group">
+
+    <label for="numOfTravelers">Num of travelers:</label>
+    <input type="number" id="numOfTravelers" name="numOfTravelers" min="1" max="5" >
+  </div>
+
+  <div class="form-group">
+    <label for="originationAirport">Origination Airport:</label>
+    <select name="originationAirport" id="originationAirport">
+      <option value="ord">OHare</option>
+      <option value="lag">NY Laguardia</option>
+      <option value="bos">Boston</option>
+    </select>
+  </div>
+  <!--<br><br> -->
+
+  <div class="form-group">
+  <label for="destinationAirport">Destination Airport:</label>
+  <select name="destinationAirport" id="destinationAirport">
+    <option value="ord">OHare</option>
+    <option value="lag">NY Laguardia</option>
+    <option value="bos">Boston</option>
+  </select>
+  </div>
+   <!--<br><br> -->
+
+  <div class="form-group">
+  <label for="travelDate">Enter travel date:</label>
+  <input type="date" id="travelDate" name="travelDate" min="2020-10-01">
+  </div>
+
+  <input type="submit">
+
+
+</form>
+
