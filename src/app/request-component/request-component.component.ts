@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestComponentComponent implements OnInit {
 
+  numTravelers: number = 0;
+  price: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  calculatePrice(): void {
+    this.price = this.numTravelers * 150;
   }
 
 }

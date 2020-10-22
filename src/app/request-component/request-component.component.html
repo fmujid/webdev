@@ -5,7 +5,7 @@
   <div class="form-group">
 
     <label for="numOfTravelers">Num of travelers:</label>
-    <input type="number" id="numOfTravelers" name="numOfTravelers" min="1" max="5" >
+    <input type="number" id="numOfTravelers" name="numOfTravelers" min="1" max="25" [(ngModel)]="numTravelers" >
   </div>
 
   <div class="form-group">
@@ -33,8 +33,10 @@
   <input type="date" id="travelDate" name="travelDate" min="2020-10-01">
   </div>
 
-  <input type="submit">
-
-
+  <input type="submit" (click)="calculatePrice()">
 </form>
+
+<div class="container">
+  <label>Travel Price = {{price | currency}}</label>
+</div>
 
